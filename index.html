@@ -21,9 +21,8 @@
 <script>
     var url = document.location.toString();
     var urlParmStr = url.slice(url.indexOf('=')+1);
-    if(navigator.userAgent.indexOf("MicroMessenger") > -1) {
-        $("<iframe src="+ urlParmStr +" height='100%' id='mainFrame' width='100%' scrolling='auto' frameborder='0'></iframe>").prependTo('body');
-    }
+    $("<iframe src="+ urlParmStr +" height='100%' id='mainFrame' width='100%' scrolling='auto' frameborder='0'></iframe>").prependTo('body');
+    
 </script>
 </body>
 </html>
